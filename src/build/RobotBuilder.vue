@@ -2,31 +2,31 @@
   <div>
     <div class="top-row">
       <div class="top part">
-        <img src="./images/head-big-eye.png" alt="head" />
+        <img v-bind:src="availableParts.heads[0].imageUrl" alt="head" />
         <button class="prev-selector">&#9668;</button>
         <button class="next-selector">&#9658;</button>
       </div>
     </div>
     <div class="middle-row">
       <div class="left part">
-        <img src="./images/arm-articulated-claw.png" alt="left arm" />
-        <button class="prev-selector">&#9650;</button>
-        <button class="next-selector">&#9660;</button>
+        <img v-bind:src="availableParts.arms[0].imageUrl" alt="left arm" />
+        <button class="prev-selector">&#9651;</button>
+        <button class="next-selector">&#9661;</button>
       </div>
       <div class="center part">
-        <img src="./images/torso-flexible-gauged.png" alt="torso" />
+        <img v-bind:src="availableParts.torsos[0].imageUrl" alt="torso" />
         <button class="prev-selector">&#9668;</button>
         <button class="next-selector">&#9658;</button>
       </div>
       <div class="right part">
-        <img src="./images/arm-dual-claw.png" alt="right arm" />
-        <button class="prev-selector">&#9650;</button>
-        <button class="next-selector">&#9660;</button>
+        <img v-bind:src="availableParts.arms[0].imageUrl" alt="right arm" />
+        <button class="prev-selector">&#9651;</button>
+        <button class="next-selector">&#9661;</button>
       </div>
     </div>
     <div class="bottom-row">
       <div class="bottom part">
-        <img src="./images/base-single-wheel.png" alt="base" />
+        <img v-bind:src="availableParts.bases[0].imageUrl" alt="base" />
         <button class="prev-selector">&#9668;</button>
         <button class="next-selector">&#9658;</button>
       </div>
@@ -35,8 +35,15 @@
 </template>
 
 <script>
+import parts from '../data/parts';
+
 export default {
   name: 'RobotBuilder',
+  data() {
+    return {
+      availableParts: parts,
+    };
+  },
 };
 </script>
 

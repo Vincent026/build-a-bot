@@ -16,7 +16,7 @@
 
 <script>
 // import HomePage from './components/HomePage.vue';
-import RobotBuilder from './robotbuilder/RobotBuilder.vue';
+import RobotBuilder from './build/RobotBuilder.vue';
 
 export default {
   name: 'App',
