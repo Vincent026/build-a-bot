@@ -1,16 +1,28 @@
 <template>
+  <header>
+    <nav>
+      <ul>
+        <li class="nav-item">
+          <img class="logo" src="./assets/build-a-bot-logo.png" alt="logo" /> build-a-bot
+        </li>
+      </ul>
+    </nav>
+  </header>
   <main>
-    <HomePage msg="Welcome to Your Vue.js App"/>
-</main>
+    <!-- <HomePage msg="Welcome to Your Vue.js App" /> -->
+    <RobotBuilder></RobotBuilder>
+  </main>
 </template>
 
 <script>
-import HomePage from './components/HomePage.vue';
+// import HomePage from './components/HomePage.vue';
+import RobotBuilder from './robotbuilder/RobotBuilder.vue';
 
 export default {
   name: 'App',
   components: {
-    HomePage,
+    // HomePage,
+    RobotBuilder,
   },
 };
 </script>
@@ -20,12 +32,12 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
-body{
+body {
   background: linear-gradient(to bottom, #555, #999);
-  background-attachment:fixed;
+  background-attachment: fixed;
 }
 
-main{
+main {
   margin: 0 auto;
   padding: 30px;
   background-color: white;
@@ -33,4 +45,26 @@ main{
   min-height: 300px;
 }
 
+header {
+  background-color: #999;
+  width: 1460px;
+  margin: 0 auto;
+}
+
+ul {
+  padding: 3px;
+  display: flex;
+}
+
+.nav-item {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 22 px;
+  border-right: 1 px solid #bbb;
+}
+
+.logo {
+  vertical-align: middle;
+  height: 30px;
+}
 </style>

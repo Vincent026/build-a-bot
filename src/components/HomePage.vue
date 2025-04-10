@@ -3,8 +3,8 @@
     <div>
       <img class="robot" src="../assets/robot-home.png" aria-hidden=true alt="Robot" />
     </div>
-    <div class ="get-started">
-        <a href="">Get started</a> building you first robot!
+    <div class="get-started">
+      <a href="">Get started</a> building you first robot!
     </div>
   </div>
 </template>
@@ -21,16 +21,15 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .home {
-  text-align:  center;
+  text-align: center;
 }
 
-.robot{
+.robot {
   height: 500px;
 }
 
 .get-started {
-  padding-top:  20px;
+  padding-top: 20px;
   font-size: 32px;
 }
-
 </style>
